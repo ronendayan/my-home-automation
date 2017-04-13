@@ -1,0 +1,3 @@
+title: 'Kodi Web Interface'
+url: !secret iframe_url_kodi
+icon: mdi:kodi

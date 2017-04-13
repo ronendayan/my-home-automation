@@ -1,0 +1,12 @@
+default_view:
+  view: yes
+  entities:
+    - group.channels
+    - group.hdmi_switch
+    - group.lights
+    - group.switches
+    - group.scenes
+#    - group.weather
+#    - group.traffic
+    - device_tracker.backpack
+    - sun.sun

@@ -1,0 +1,4 @@
+scene.movie_time:
+  friendly_name: 'Movie Time'
+  emulated_hue: true
+  emulated_hue_name: "Movie Time"

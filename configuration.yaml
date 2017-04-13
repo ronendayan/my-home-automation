@@ -1,0 +1,92 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 767
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Asia/Jerusalem
+  customize: !include_dir_merge_named customize
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_api_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  base_url: !secret http_base_url
+  ssl_certificate: !secret http_ssl_certificate
+  ssl_key: !secret http_ssl_key
+
+# Check for config:
+config:
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+#sensor:
+#  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+media_player:
+  - platform: kodi
+    name: OSMC
+    host: !secret media_player_host_osmc
+    username: !secret media_player_username_osmc
+    password: !secret media_player_password_osmc
+  - platform: kodi
+    name: BeeLink
+    host: !secret media_player_host_beelink
+    username: !secret media_player_username_beelink
+    password: !secret media_player_password_beelink
+
+emulated_hue:
+  host_ip: !secret emulated_hue_host_ip
+  type: alexa
+  listen_port: 8300
+  expose_by_default: false
+
+alert: !include_dir_merge_list alerts
+automation: !include_dir_list automations
+binary_sensor: !include_dir_merge_list binary_sensors
+device_tracker: !include_dir_merge_list trackers
+group: !include_dir_merge_named group
+light: !include lights.yaml
+mqtt: !include servers/mqtt.yaml
+notify: !include_dir_merge_list notifiers
+panel_iframe: !include_dir_named iframes
+scene: !include scenes.yaml
+script: !include_dir_merge_named scripts
+sensor: !include_dir_merge_list sensor
+shell_command: !include commands/shell_commands.yaml
+switch: !include_dir_merge_list switches/
+zone: !include_dir_merge_list zones
+
+

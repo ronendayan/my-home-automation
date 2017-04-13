@@ -1,0 +1,23 @@
+switch.vintage_lamp:
+  friendly_name: 'Vintage Lamp'
+  icon: mdi:lamp
+  emulated_hue: true
+  emulated_hue_name: "Vintage Lamp"
+
+light.tower_light:
+  friendly_name: 'Tower Light'
+  icon: mdi:lamp
+  emulated_hue: true
+  emulated_hue_name: "Tower Light"
+
+switch.corner_light:
+  friendly_name: 'Corner Light'
+  icon: mdi:lamp
+  assumed_state: false
+  emulated_hue: true
+  emulated_hue_name: "Corner Light"
+
+light.kitchen_light:
+  friendly_name: 'Kitchen Light'
+  emulated_hue: true
+  emulated_hue_name: "Kitchen Light"

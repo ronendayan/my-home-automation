@@ -1,0 +1,9 @@
+Media:
+  view: yes
+  name: "Media"
+  entities:
+    - group.transmission
+    - media_player.beelink
+    - media_player.osmc
+    - group.speedtest
+    - group.kodi_buttons

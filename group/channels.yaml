@@ -1,0 +1,5 @@
+Channels:
+  control: hidden
+  entities:
+    - scene.channel_2
+    - scene.channel_10

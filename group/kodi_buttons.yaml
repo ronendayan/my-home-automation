@@ -1,0 +1,8 @@
+kodi_buttons:
+  name: "Kodi Buttons"
+  control: hidden
+  entities:
+    - scene.stop_kodi_beelink
+    - scene.library_scan_beelink
+    - scene.library_clean_beelink
+    - sensor.disk_use_mntiomega

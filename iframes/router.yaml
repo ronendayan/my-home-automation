@@ -1,0 +1,3 @@
+title: 'Router'
+url: !secret iframe_url_router
+icon: mdi:router-wireless

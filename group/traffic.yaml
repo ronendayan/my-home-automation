@@ -1,0 +1,6 @@
+Traffic:
+  entities:
+    - sensor.ronens_work
+    - sensor.ronens_home
+    - sensor.michals_work
+    - sensor.michals_home

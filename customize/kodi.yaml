@@ -1,0 +1,15 @@
+scene.stop_kodi_beelink:
+  friendly_name: 'Stop Kodi - Beelink'
+  icon: mdi:stop
+
+scene.library_scan_beelink:
+  friendly_name: 'Library Scan - Beelink'
+  icon: mdi:update
+
+scene.library_clean_beelink:
+  friendly_name: 'Library Clean - Beelink'
+  icon: mdi:notification-clear-all
+
+sensor.disk_use_mntiomega:
+  friendly_name: 'Disk Usage: iOmega'
+  icon: mdi:harddisk

@@ -1,0 +1,15 @@
+channel_2:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.topbox_2
+    - delay: 00:00:01
+    - service: switch.turn_on
+      entity_id: switch.topbox_ok
+
+channel_10:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.topbox_3
+    - delay: 00:00:01
+    - service: switch.turn_on
+      entity_id: switch.topbox_ok

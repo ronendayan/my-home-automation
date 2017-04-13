@@ -1,0 +1,42 @@
+- name: "Movie Time"
+  entities:
+    switch.android: on
+    switch.vintage_lamp: off
+    switch.corner_light: off
+    light.tower_light:
+      state: on
+      rgb_color: [204, 204, 0]
+      brightness: 150
+
+- name: "Channel 2"
+  entities:
+    script.channel_2: on
+
+- name: "Channel 10"
+  entities:
+    script.channel_10: on
+
+- name: "Kodi"
+  entities:
+    switch.kodi: on
+
+- name: "Android"
+  entities:
+    switch.android: on
+
+- name: "Live TV"
+  entities:
+    switch.live_tv: on
+
+- name: "Stop Kodi Beelink"
+  entities:
+    script.stop_kodi_beelink: on
+
+- name: "Library Scan Beelink"
+  entities:
+    script.library_scan_beelink: on
+
+- name: "Library Clean Beelink"
+  entities:
+    script.library_clean_beelink: on
+

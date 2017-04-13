@@ -1,0 +1,34 @@
+#- platform: orvibo
+#  discovery: false
+#  switches:
+#    host: !secret orvibo_host
+#    mac: !secret orvibo_mac
+#    name: ""
+
+#- platform: tplink
+#  host: !secret tplink_host
+
+- platform: transmission
+  name: "Transmission"
+  host: !secret transmission_host
+  port: 9091
+  username: !secret transmission_username
+  password: !secret transmission_password
+
+- platform: mqtt
+  name: "corner_light"
+  state_topic: "home/sonoff/1/stat"
+  command_topic: "home/sonoff/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "vintage_lamp"
+  state_topic: "home/sonoff/2/stat"
+  command_topic: "home/sonoff/2"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true

@@ -1,0 +1,15 @@
+stop_kodi_beelink:
+  alias: Stop Kodi Beelink
+  sequence:
+    - service: shell_command.stop_kodi_beelink
+
+library_scan_beelink:
+  alias: Library Scan Beelink
+  sequence:
+    - service: shell_command.library_scan_beelink
+
+library_clean_beelink:
+  alias: Library Clean Beelink
+  sequence:
+    - service: shell_command.library_clean_beelink
+ 

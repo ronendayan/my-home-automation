@@ -1,0 +1,7 @@
+Transmission:
+  entities:
+    - switch.transmission
+    - sensor.transmission_status
+    - sensor.transmission_down_speed
+    - sensor.transmission_up_speed
+

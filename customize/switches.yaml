@@ -1,0 +1,28 @@
+switch.tv:
+  friendly_name: 'TV'
+  icon: mdi:television
+  emulated_hue: true
+  emulated_hue_name: "TV"
+
+scene.kodi:
+  friendly_name: 'Kodi'
+  icon: mdi:kodi
+  emulated_hue: true
+  emulated_hue_name: 'Kodi'
+
+scene.android:
+  friendly_name: 'Android'
+  icon: mdi:android
+  emulated_hue: true
+  emulated_hue_name: 'Android'
+
+scene.live_tv:
+  friendly_name: 'Live TV'
+  icon: mdi:camcorder
+  emulated_hue: true
+  emulated_hue_name: 'Live TV'
+
+switch.radiator:
+  friendly_name: 'Radiator'
+  icon: mdi:radiator
+

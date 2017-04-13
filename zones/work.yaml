@@ -1,0 +1,11 @@
+- name: Ronen_Work
+  latitude: 31.988477
+  longitude: 34.909142
+  radius: 500
+  icon: mdi:briefcase
+
+- name: Michal_Work
+  latitude: 32.061805
+  longitude: 34.788615
+  radius: 500
+  icon: mdi:briefcase

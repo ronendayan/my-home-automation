@@ -1,0 +1,3 @@
+title: 'Transmission'
+url: !secret iframe_url_transmission
+icon: mdi:cloud-download

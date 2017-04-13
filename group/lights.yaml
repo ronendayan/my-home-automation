@@ -1,0 +1,6 @@
+Lights:
+ entities:
+   - switch.vintage_lamp
+   - light.tower_light
+   - switch.corner_light
+   - light.kitchen_light

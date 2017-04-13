@@ -1,0 +1,3 @@
+stop_kodi_beelink: /bin/sh /home/homeassistant/.homeassistant/shell_scripts/stop_kodi_beelink.sh
+library_scan_beelink: /bin/sh /home/homeassistant/.homeassistant/shell_scripts/library_scan_beelink.sh
+library_clean_beelink: /bin/sh /home/homeassistant/.homeassistant/shell_scripts/library_clean_beelink.sh

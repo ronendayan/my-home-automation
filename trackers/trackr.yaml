@@ -1,0 +1,4 @@
+- platform: trackr
+  username: !secret trackr_username
+  password: !secret trackr_password
+

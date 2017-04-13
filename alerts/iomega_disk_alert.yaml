@@ -1,0 +1,5 @@
+name: 'Low disk space iOmega'
+entity_id: binary_sensor.iomega_disk_alert
+repeat: 30
+notifiers:
+  - ronen_pushbullet

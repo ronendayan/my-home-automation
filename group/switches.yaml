@@ -1,0 +1,4 @@
+Switches:
+  control: hidden
+  entities:
+    - switch.tv

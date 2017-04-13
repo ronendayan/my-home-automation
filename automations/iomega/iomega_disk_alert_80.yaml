@@ -1,0 +1,9 @@
+alias: 'iOmega wraning - above 80'
+trigger:
+  platform: template
+  value_template: "{% if states('sensor.disk_use_mntiomega') | float > 79.9  %}true{% endif %}"
+action:
+  service: notify.ronen_pushbullet
+  data:
+    title: "iOmega - Warning"
+    message: "Disk usage on iOmega is above 80%"

@@ -1,0 +1,7 @@
+HDMI_Switch:
+  name: "HDMI Switch"
+  control: hidden
+  entities:
+    - scene.kodi
+    - scene.android
+    - scene.live_tv

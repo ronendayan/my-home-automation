@@ -1,0 +1,6 @@
+Weather:
+  entities:
+    - sensor.yr_temperature
+    - sensor.yr_humidity
+    - sensor.yr_cloudiness
+    - sensor.yr_fog

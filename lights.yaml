@@ -1,0 +1,13 @@
+- platform: limitlessled
+  discovery: false
+  bridges:
+    - host: !secret limitlessled_bridge_host
+      version: 4
+      port: 8899
+      groups:
+      - number: 1
+        type: white
+        name: Kitchen Light
+      - number: 1
+        type: rgbw
+        name: Tower Light

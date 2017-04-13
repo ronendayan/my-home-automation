@@ -1,0 +1,6 @@
+info:
+  view: yes
+  name: "Info"
+  entities:
+    - group.weather
+    - group.traffic
