@@ -1,0 +1,6 @@
+- platform: command_line
+  command: 'netstat -na | grep 1883 | grep LISTEN > /dev/null && echo "Running" || echo "Not running"'
+  name: 'Mosquitto'
+  device_class: connectivity
+  payload_on: "Running"
+  payload_off: "Not running"

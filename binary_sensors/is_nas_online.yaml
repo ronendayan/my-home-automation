@@ -1,0 +1,7 @@
+- platform: command_line
+  command: 'ping -c 1 nas | grep "1 received" | wc -l'
+  name: 'iOmega'
+  device_class: connectivity
+  payload_on: 1
+  payload_off: 0
+

@@ -7,3 +7,4 @@ Media:
     - media_player.osmc
     - group.speedtest
     - group.kodi_buttons
+    - group.processes

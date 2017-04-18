@@ -1,0 +1,8 @@
+Processes:
+  entities:
+    - binary_sensor.iomega
+    - binary_sensor.osmc_server
+    - binary_sensor.flexget
+    - binary_sensor.transmission
+    - binary_sensor.mosquitto
+    - binary_sensor.crontab

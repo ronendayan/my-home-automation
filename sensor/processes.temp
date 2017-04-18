@@ -1,0 +1,8 @@
+- platform: template
+  sensors:
+    mosquitto_status:
+      value_template: '{% if is_state("binary_sensor.mosquitto_process", "on") %}Running{% else %}Not running{% endif %}'
+      friendly_name: 'Mosquitto'
+    flexget_status:
+      value_template: '{% if is_state("binary_sensor.flexget_process", "on") %}Running{% else %}Not running{% endif %}'
+      friendly_name: 'Flexget'

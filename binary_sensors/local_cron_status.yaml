@@ -1,0 +1,6 @@
+- platform: command_line
+  command: 'service cron status | grep running > /dev/null && echo "Running" || echo "Not running"'
+  name: 'Crontab'
+  device_class: connectivity
+  payload_on: "Running"
+  payload_off: "Not running"

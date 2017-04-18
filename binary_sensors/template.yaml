@@ -1,5 +1,0 @@
-- platform: template
-  sensors:
-    iomega_disk_alert:
-      value_template: '{{ states.sensor.disk_use_mntiomega | float > 69.9 }}'
-      friendly_name: 'Low disk space iOmega'
