@@ -1,0 +1,10 @@
+alias: 'Crontab Status'
+trigger:
+  platform: template
+  value_template: "{% if is_state('binary_sensor.crontab', 'off') %}true{% endif %}"
+action:
+  service: notify.ronen_pushbullet
+  data:
+    title: "Process - Warning"
+    message: "Crontab is not running on HASS"
+

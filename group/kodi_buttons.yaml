@@ -5,4 +5,3 @@ kodi_buttons:
     - scene.stop_kodi_beelink
     - scene.library_scan_beelink
     - scene.library_clean_beelink
-    - sensor.disk_use_mntiomega

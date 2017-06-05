@@ -10,3 +10,5 @@ default_view:
 #    - group.traffic
     - device_tracker.backpack
     - sun.sun
+    - device_tracker.ronen_oneplus2
+    - device_tracker.ronen_pro6

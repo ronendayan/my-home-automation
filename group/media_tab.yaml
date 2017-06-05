@@ -5,6 +5,5 @@ Media:
     - group.transmission
     - media_player.beelink
     - media_player.osmc
-    - group.speedtest
     - group.kodi_buttons
-    - group.processes
+    - media_player.spotify

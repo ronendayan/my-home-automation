@@ -5,8 +5,8 @@
 #    mac: !secret orvibo_mac
 #    name: ""
 
-#- platform: tplink
-#  host: !secret tplink_host
+- platform: tplink
+  host: !secret tplink_host
 
 - platform: transmission
   name: "Transmission"

@@ -13,6 +13,7 @@ scene.kodi:
 scene.android:
   friendly_name: 'Android'
   icon: mdi:android
+  icon-color:
   emulated_hue: true
   emulated_hue_name: 'Android'
 
@@ -22,7 +23,8 @@ scene.live_tv:
   emulated_hue: true
   emulated_hue_name: 'Live TV'
 
-switch.radiator:
-  friendly_name: 'Radiator'
-  icon: mdi:radiator
-
+switch.bedroom_fan:
+  friendly_name: 'Bedroom Fan'
+  icon: mdi:fan
+  emulated_hue: true
+  emulated_hue_name: 'Bedroom Fan'

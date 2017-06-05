@@ -1,0 +1,9 @@
+System:
+  view: yes
+  name: "System"
+  entities:
+    - group.servers
+    - group.processes
+    - group.storage
+    - group.speedtest
+    - camera.cam_1_rtsp

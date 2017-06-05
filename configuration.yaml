@@ -55,6 +55,16 @@ sun:
 tts:
   platform: google
 
+datadog:
+
+ffmpeg:
+  ffmpeg_bin: /usr/bin/avconv
+
+camera:
+  - platform: ffmpeg
+    input: !secret camera_input
+    name: CAM_1_RTSP
+
 media_player:
   - platform: kodi
     name: OSMC
@@ -66,6 +76,10 @@ media_player:
     host: !secret media_player_host_beelink
     username: !secret media_player_username_beelink
     password: !secret media_player_password_beelink
+  - platform: spotify
+    name: Spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
 
 emulated_hue:
   host_ip: !secret emulated_hue_host_ip
