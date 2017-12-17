@@ -1,0 +1,3 @@
+sensor.ssl_certificate_expiry:
+  friendly_name: !secret http_base_url
+  icon: mdi:certificate

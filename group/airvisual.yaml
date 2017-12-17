@@ -1,0 +1,8 @@
+airvisual:
+  name: "AirVisual"
+  control: hidden
+  entities:
+    - sensor.us_air_pollution_level
+    - sensor.us_air_quality_index
+    - sensor.us_main_pollutant
+     

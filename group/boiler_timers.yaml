@@ -1,0 +1,6 @@
+boiler_timers:
+  name: "Boiler Timers"
+  control: hidden
+  entities:
+    - automation.turn_on_boiler_at_430
+    - automation.turn_on_boiler_at_1700

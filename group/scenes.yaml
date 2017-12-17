@@ -2,4 +2,3 @@ Scenes:
   control: hidden
   entities:
     - scene.movie_time
-    - scene.color_mod

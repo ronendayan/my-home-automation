@@ -1,13 +1,13 @@
-scene.channel_2:
-  friendly_name: 'Channel 2'
-  icon: mdi:remote
-#  emulated_hue: true
-#  emulated_hue_name: "Channel 2"
+#scene.channel_2:
+#  friendly_name: 'Channel 2'
+#  icon: mdi:remote
+##  emulated_hue_hidden: false
+##  emulated_hue_name: "Channel 2"
 
-scene.channel_10:
-  friendly_name: 'Channel 10'
-  icon: mdi:remote
-#  emulated_hue: true
-#  emulated_hue_name: "Channel 10"
+#scene.channel_10:
+#  friendly_name: 'Channel 10'
+#  icon: mdi:remote
+##  emulated_hue_hidden: false
+##  emulated_hue_name: "Channel 10"
 
 

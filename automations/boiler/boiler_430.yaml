@@ -1,0 +1,7 @@
+alias: 'Turn on boiler at 4:30'
+trigger:
+  - platform: time
+    at: '4:30'
+action:
+  - service: switch.turn_on
+    entity_id: switch.boiler_switch

@@ -1,0 +1,16 @@
+alias: "Boiler Timer"
+trigger:
+  - platform: time
+    minutes: '/1'
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: input_boolean.boiler_timer
+    state: 'on'
+  - condition: template
+    value_template: '{{ now().strftime("%H:%M") == states.sensor.boiler_time.state }}'
+action:
+  service: switch.turn_on
+  entity_id: switch.boiler_switch
+
+

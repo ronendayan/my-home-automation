@@ -1,23 +1,136 @@
-switch.vintage_lamp:
-  friendly_name: 'Vintage Lamp'
+switch.lantern_lamp:
+  friendly_name: 'Lantern Lamp'
   icon: mdi:lamp
-  emulated_hue: true
-  emulated_hue_name: "Vintage Lamp"
+  emulated_hue_hidden: false
+  emulated_hue_name: "Lantern Lamp"
 
-light.tower_light:
-  friendly_name: 'Tower Light'
+switch.blue_vintage_lamp:
+  friendly_name: 'Blue Vintage Lamp'
   icon: mdi:lamp
-  emulated_hue: true
-  emulated_hue_name: "Tower Light"
+  emulated_hue_hidden: false
+  emulated_hue_name: "Blue Vintage Lamp"
+
+#light.tower_light:
+#  friendly_name: 'Tower Light'
+#  icon: mdi:lamp
+#  emulated_hue_hidden: false
+#  emulated_hue_name: "Tower Light"
 
 switch.corner_light:
   friendly_name: 'Corner Light'
   icon: mdi:lamp
   assumed_state: false
-  emulated_hue: true
+  emulated_hue_hidden: false
   emulated_hue_name: "Corner Light"
 
-light.kitchen_light:
+
+switch.living_room_lights:
+  friendly_name: Living Room Lights
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Living Room Lights" 
+
+switch.livingroom_1_light:
+  friendly_name: 'Living Room 1 Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+   
+switch.livingroom_2_light:
+  friendly_name: 'Living Room 2 Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+
+switch.entrance_light:
+  friendly_name: 'Entrance Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Entrance Light"
+
+switch.kitchen_light:
   friendly_name: 'Kitchen Light'
-  emulated_hue: true
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
   emulated_hue_name: "Kitchen Light"
+
+switch.porch_light:
+  friendly_name: 'Porch Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Porch Light"
+
+switch.hall_1_light:
+  friendly_name: 'Hall 1 Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Hall 1 Light"
+
+switch.hall_2_light:
+  friendly_name: 'Hall 2 Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Hall 2 Light"
+
+
+  
+switch.master_bedroom_light:
+  friendly_name: 'Master Bedroom Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Master Bedroom Light"
+
+switch.kids_room_light:
+  friendly_name: 'Kids Room Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Kids Room Light"
+
+switch.kids_room_night_light:
+  friendly_name: 'Kids Room Night Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Kids Room Night Light"
+
+switch.safe_room_light:
+  friendly_name: 'Safe Room Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Safe Room Light"
+
+switch.shower_room_light:
+  friendly_name: 'Shower Room Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Shower Room Light"
+
+switch.wardrobe_light:
+  friendly_name: 'Wardrobe Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Wardrobe Light"
+  
+switch.bathroom_light:
+  friendly_name: 'Bathroom Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Bathroom Light"
+
+switch.toilet_light:
+  friendly_name: 'Toilet Light'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_hidden: false
+  emulated_hue_name: "Toilet Light"
+

@@ -1,0 +1,17 @@
+switch.topbox_2:
+  google_assistant: false
+switch.topbox_3:
+  google_assistant: false
+switch.topbox_ok:
+  google_assistant: false
+switch.amazon_fire_tv:
+  google_assistant: false
+switch.tv:
+  google_assistant: false
+switch.live_tv:
+  google_assistant: false
+switch.kodi:
+  google_assistant: false
+switch.chromecast_living_room:
+  google_assistant: false
+

@@ -1,0 +1,12 @@
+- platform: mqtt
+  state_topic: !secret ronen_owntracks
+  name: "Battery Level - Ronen"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+
+- platform: mqtt
+  state_topic: !secret michal_owntracks
+  name: "Battery Level - Michal"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+

@@ -1,14 +1,19 @@
 default_view:
   view: yes
   entities:
-    - group.channels
+#    - group.channels
     - group.hdmi_switch
-    - group.lights
+    - group.home_lights
+    - group.rooms_lights
     - group.switches
-    - group.scenes
+    - group.boiler
+    - group.lamps
+#    - group.scenes
+#    - group.air_conditioner
 #    - group.weather
 #    - group.traffic
-    - device_tracker.backpack
+#    - device_tracker.backpack
     - sun.sun
     - device_tracker.ronen_oneplus2
-    - device_tracker.ronen_pro6
+    - device_tracker.ronen_hwcan
+    - group.boiler_timers

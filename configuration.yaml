@@ -12,11 +12,23 @@ homeassistant:
   time_zone: Asia/Jerusalem
   customize: !include_dir_merge_named customize
 
+map:
+
 # Show links to resources in log and frontend
 #introduction:
 
 # Enables the frontend
 frontend:
+  themes:
+    azure:
+      primary-color: azure
+    pink:
+      primary-color: pink
+    blue:
+      primary-color: blue
+    darkred:
+      primary-color: darkred
+
 
 http:
   # Uncomment this to add a password (recommended!)
@@ -55,7 +67,7 @@ sun:
 tts:
   platform: google
 
-datadog:
+#datadog:
 
 ffmpeg:
   ffmpeg_bin: /usr/bin/avconv
@@ -63,14 +75,14 @@ ffmpeg:
 camera:
   - platform: ffmpeg
     input: !secret camera_input
-    name: CAM_1_RTSP
+    name: 'Kids Room'
 
 media_player:
-  - platform: kodi
-    name: OSMC
-    host: !secret media_player_host_osmc
-    username: !secret media_player_username_osmc
-    password: !secret media_player_password_osmc
+#  - platform: kodi
+#    name: OSMC
+#    host: !secret media_player_host_osmc
+#    username: !secret media_player_username_osmc
+#    password: !secret media_player_password_osmc
   - platform: kodi
     name: BeeLink
     host: !secret media_player_host_beelink
@@ -80,6 +92,8 @@ media_player:
     name: Spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
+#  - platform: firetv
+  - platform: cast
 
 emulated_hue:
   host_ip: !secret emulated_hue_host_ip
@@ -87,15 +101,26 @@ emulated_hue:
   listen_port: 8300
   expose_by_default: false
 
+google_assistant:
+  project_id: !secret google_project_id
+  client_id: !secret google_client_id
+  access_token: !secret google_access_token
+  agent_user_id: !secret google_agent_user_id
+  api_key: !secret google_api_key
+  exposed_domains:
+    - switch
+
 alert: !include_dir_merge_list alerts
 automation: !include_dir_list automations
 binary_sensor: !include_dir_merge_list binary_sensors
 device_tracker: !include_dir_merge_list trackers
 group: !include_dir_merge_named group
-light: !include lights.yaml
+input_boolean: !include input_boolean.yaml
+input_number: !include input_number.yaml
+#light: !include lights.yaml
 mqtt: !include servers/mqtt.yaml
 notify: !include_dir_merge_list notifiers
-panel_iframe: !include_dir_named iframes
+#panel_iframe: !include_dir_named iframes
 scene: !include scenes.yaml
 script: !include_dir_merge_named scripts
 sensor: !include_dir_merge_list sensor

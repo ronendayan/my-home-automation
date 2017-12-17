@@ -1,0 +1,7 @@
+automations:
+  name: "Automations"
+  control: hidden
+  entities:
+    - automation.turn_off_boiler_after_30_minutes
+    - automation.turn_off_all_lights_when_nobody_home
+    - automation.turn_off_transmission_turtle_at_200

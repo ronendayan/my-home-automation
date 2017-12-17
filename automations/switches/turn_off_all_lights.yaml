@@ -1,0 +1,9 @@
+alias: 'Turn off all lights when nobody home'
+trigger:
+  - platform: state
+    entity_id: group.all_devices
+    from: 'home'
+    to: 'not_home'
+action:
+  - service: script.turn_on
+    entity_id: script.turn_off_all_lights

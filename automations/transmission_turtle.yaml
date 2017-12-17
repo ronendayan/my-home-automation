@@ -1,0 +1,8 @@
+alias: 'Turn off Transmission turtle at 2:00'
+trigger:
+  - platform: time
+    at: '02:00'
+action:
+  - service: switch.turn_off
+    entity_id: switch.transmission
+

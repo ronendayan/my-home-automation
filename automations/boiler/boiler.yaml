@@ -1,0 +1,13 @@
+alias: 'Turn off boiler after 30 minutes'
+trigger:
+  - platform: state
+    entity_id: switch.boiler_switch
+    from: 'off'
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 30
+      seconds: 0
+action:
+  - service: switch.turn_off
+    entity_id: switch.boiler_switch

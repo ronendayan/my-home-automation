@@ -1,0 +1,15 @@
+alarmhour_water_heater:
+  name: Hour
+  initial: 6
+  min: 0
+  max: 23
+  step: 1
+  icon: mdi:timer
+
+alarmminutes_water_heater:
+  name: Minute
+  initial: 00
+  min: 0
+  max: 59
+  step: 5
+  icon: mdi:timer

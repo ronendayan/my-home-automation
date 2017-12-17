@@ -3,5 +3,6 @@ HDMI_Switch:
   control: hidden
   entities:
     - scene.kodi
-    - scene.android
+    - scene.amazon_fire_tv
     - scene.live_tv
+    - scene.chromecast_living_room

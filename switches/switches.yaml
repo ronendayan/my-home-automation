@@ -1,12 +1,12 @@
-#- platform: orvibo
-#  discovery: false
-#  switches:
-#    host: !secret orvibo_host
-#    mac: !secret orvibo_mac
-#    name: ""
+- platform: orvibo
+  discovery: false
+  switches:
+    host: !secret orvibo_host
+    mac: !secret orvibo_mac
+    name: "Kitchen Radio"
 
-- platform: tplink
-  host: !secret tplink_host
+#- platform: tplink
+#  host: !secret tplink_host
 
 - platform: transmission
   name: "Transmission"
@@ -15,20 +15,174 @@
   username: !secret transmission_username
   password: !secret transmission_password
 
-- platform: mqtt
-  name: "corner_light"
-  state_topic: "home/sonoff/1/stat"
-  command_topic: "home/sonoff/1"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+#- platform: mqtt
+#  name: "corner_light"
+#  state_topic: "home/sonoff/1/stat"
+#  command_topic: "home/sonoff/1"
+#  qos: 0
+#  payload_on: "on"
+#  payload_off: "off"
+#  retain: true
 
 - platform: mqtt
-  name: "vintage_lamp"
+  name: "lantern_lamp"
   state_topic: "home/sonoff/2/stat"
   command_topic: "home/sonoff/2"
   qos: 0
   payload_on: "on"
   payload_off: "off"
   retain: true
+
+- platform: mqtt
+  name: "blue_vintage_lamp"
+  state_topic: "home/sonoff/3/stat"
+  command_topic: "home/sonoff/3"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "bathroom_light"
+  state_topic: "home/sonoff_touch/bathroom/1/stat"
+  command_topic: "home/sonoff_touch/bathroom/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "toilet_light"
+  state_topic: "home/sonoff_touch/toilet/1/stat"
+  command_topic: "home/sonoff_touch/toilet/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "entrance_light"
+  state_topic: "home/sonoff_touch/entrance/1/stat"
+  command_topic: "home/sonoff_touch/entrance/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "hall_1_light"
+  state_topic: "home/sonoff_touch/hall/1/stat"
+  command_topic: "home/sonoff_touch/hall/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "hall_2_light"
+  state_topic: "home/sonoff_touch/hall/2/stat"
+  command_topic: "home/sonoff_touch/hall/2"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "kids_room_light"
+  state_topic: "home/sonoff_touch/kids_room/1/stat"
+  command_topic: "home/sonoff_touch/kids_room/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "kids_room_night_light"
+  state_topic: "home/sonoff_touch/kids_room/2/stat"
+  command_topic: "home/sonoff_touch/kids_room/2"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "kitchen_light"
+  state_topic: "home/sonoff_touch/kitchen/1/stat"
+  command_topic: "home/sonoff_touch/kitchen/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "livingroom_1_light"
+  state_topic: "home/sonoff_touch/livingroom/1/stat"
+  command_topic: "home/sonoff_touch/livingroom/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "livingroom_2_light"
+  state_topic: "home/sonoff_touch/livingroom/2/stat"
+  command_topic: "home/sonoff_touch/livingroom/2"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "master_bedroom_light"
+  state_topic: "home/sonoff_touch/master_bedroom/1/stat"
+  command_topic: "home/sonoff_touch/master_bedroom/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "safe_room_light"
+  state_topic: "home/sonoff_touch/safe_room/1/stat"
+  command_topic: "home/sonoff_touch/safe_room/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "porch_light"
+  state_topic: "home/sonoff_touch/porch/1/stat"
+  command_topic: "home/sonoff_touch/porch/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "shower_room_light"
+  state_topic: "home/sonoff_touch/shower_room/1/stat"
+  command_topic: "home/sonoff_touch/shower_room/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "wardrobe_light"
+  state_topic: "home/sonoff_touch/wardrobe/1/stat"
+  command_topic: "home/sonoff_touch/wardrobe/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "boiler_switch"
+  state_topic: "home/sonoff/pow/1/stat"
+  command_topic: "home/sonoff/pow/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+

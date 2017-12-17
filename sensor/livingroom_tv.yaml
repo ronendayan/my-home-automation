@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    livingroom_tv_state:
+      value_template: "{% if is_state('switch.tv', 'on') and is_state('switch.samsung_soundbar', 'on') %}on{% else %}off{% endif %}"
+      friendly_name: 'Livingroom TV State'

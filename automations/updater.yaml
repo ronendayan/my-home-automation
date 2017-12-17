@@ -1,0 +1,9 @@
+alias: 'Update notifications'
+trigger:
+  platform: state
+  entity_id: updater.updater
+action:
+  service: notify.ronen_pushbullet
+  data:
+    title: 'New Home Assistant Release'
+    message: "Home Assistant  {{ states.updater.updater.state }}  is now available."

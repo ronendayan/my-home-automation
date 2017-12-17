@@ -6,4 +6,6 @@ System:
     - group.processes
     - group.storage
     - group.speedtest
-    - camera.cam_1_rtsp
+    - group.certificates
+    - group.automations
+    - camera.kids_room

@@ -1,0 +1,5 @@
+air_conditioner:
+  name: "Air Conditioner"
+  control: hidden
+  entities:  
+    - switch.air_conditioner

@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    boiler_time:
+      friendly_name: 'Boiler Timer'
+      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.alarmhour_water_heater") | int, states("input_number.alarmminutes_water_heater") | int) }}'

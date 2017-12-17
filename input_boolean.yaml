@@ -1,0 +1,5 @@
+boiler_timer:
+  name: Boiler Timer
+  initial: off
+  icon: mdi:timer
+

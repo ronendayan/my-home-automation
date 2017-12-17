@@ -1,30 +1,80 @@
-switch.tv:
-  friendly_name: 'TV'
+#switch.tv:
+#  friendly_name: 'TV'
+#  icon: mdi:television
+#  emulated_hue_hidden: false
+#  emulated_hue_name: "TV"
+
+switch.livingroom_tv:
+  friendly_name: 'Livingroom TV'
   icon: mdi:television
-  emulated_hue: true
+  assumed_state: true
+  emulated_hue_hidden: false
   emulated_hue_name: "TV"
+
+switch.samsung_soundbar:
+  friendly_name: 'Samsung Soundbar'
+  icon: mdi:speaker
+  assumed_state: true
+  emulated_hue_hidden: false
+  emulated_hue_name: "Samsung Soundbar"
+
+scene.samsung_sb_source:
+  friendly_name: 'Samsung SB Source'
+  icon: mdi:source-fork
 
 scene.kodi:
   friendly_name: 'Kodi'
   icon: mdi:kodi
-  emulated_hue: true
+  emulated_hue_hidden: false
   emulated_hue_name: 'Kodi'
+  google_assistant: true
+  google_assistant_type: switch
 
-scene.android:
-  friendly_name: 'Android'
-  icon: mdi:android
-  icon-color:
-  emulated_hue: true
-  emulated_hue_name: 'Android'
+scene.chromecast_living_room:
+  friendly_name: 'Chromecast'
+  icon: mdi:google-chrome
+  emulated_hue_hidden: false
+  emulated_hue_name: 'Chromecast'
+  google_assistant: true
+  google_assistant_type: switch
+
+
+scene.amazon_fire_tv:
+  friendly_name: 'Amazon Fire TV'
+  icon: mdi:amazon
+  emulated_hue_hidden: false
+  emulated_hue_name: 'Amazon Fire TV'
+  google_assistant: true
+  google_assistant_type: switch
+
+
+#scene.android:
+#  friendly_name: 'Android'
+#  icon: mdi:android
+#  emulated_hue_hidden: false
+#  emulated_hue_name: 'Android'
 
 scene.live_tv:
   friendly_name: 'Live TV'
   icon: mdi:camcorder
-  emulated_hue: true
+  emulated_hue_hidden: false
   emulated_hue_name: 'Live TV'
+  google_assistant: true
+  google_assistant_type: switch
 
-switch.bedroom_fan:
-  friendly_name: 'Bedroom Fan'
-  icon: mdi:fan
-  emulated_hue: true
-  emulated_hue_name: 'Bedroom Fan'
+switch.kitchen_radio:
+  friendly_name: 'Kitchen Radio'
+  icon: mdi:radio
+  emulated_hue_hidden: false
+  emulated_hue_name: 'Kitchen Radio'
+
+switch.air_conditioner:
+  friendly_name: 'Air Conditioner'
+  icon: mdi:air-conditioner
+  google_assistant: false
+
+switch.boiler_switch:
+  friendly_name: Boiler
+  icon: mdi:radiator
+  emulated_hue_hidden: false
+  emulated_hue_name: 'Boiler'

@@ -1,0 +1,35 @@
+- alias: 'Notify when Vainglory is streaming'
+  trigger:
+    - platform: state
+      entity_id: sensor.vainglory
+      from: 'offline'
+      to: 'streaming'
+  action:
+    - service: notify.ronen_pushbullet
+      data:
+        title: 'Vainglory stream'
+        message: "Vainglory - https://www.twitch.tv/vainglory"
+
+- alias: 'Notify when Lynnsolent is streaming'
+  trigger:
+    - platform: state
+      entity_id: sensor.lynnsolent
+      from: 'offline'
+      to: 'streaming'
+  action:
+    - service: notify.ronen_pushbullet
+      data:
+        title: 'Lynnsolent stream'
+        message: "Lynnsolent - https://www.twitch.tv/lynnsolent"
+
+- alias: 'Notify when lately_gaming is streaming'
+  trigger:
+    - platform: state
+      entity_id: sensor.lately_gaming
+      from: 'offline'
+      to: 'streaming'
+  action:
+    - service: notify.ronen_pushbullet
+      data:
+        title: 'lately_gaming stream'
+        message: "lately_gaming - https://www.twitch.tv/lately_gaming"

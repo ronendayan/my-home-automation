@@ -4,3 +4,6 @@ info:
   entities:
     - group.weather
     - group.traffic
+    - group.phone_battery
+    - group.airvisual
+    - sensor.current_version

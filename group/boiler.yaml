@@ -1,0 +1,8 @@
+Boiler:
+  control: hidden
+  entities:
+    - switch.boiler_switch
+    - input_boolean.boiler_timer
+    - sensor.boiler_time
+    - input_number.alarmhour_water_heater
+    - input_number.alarmminutes_water_heater

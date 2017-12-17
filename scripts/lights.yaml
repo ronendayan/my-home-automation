@@ -1,0 +1,47 @@
+living_room_lights_on:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.livingroom_1_light
+    - service: switch.turn_on
+      entity_id: switch.livingroom_2_light
+
+living_room_lights_off:
+  sequence:
+    - service: switch.turn_off
+      entity_id: switch.livingroom_1_light
+    - service: switch.turn_off
+      entity_id: switch.livingroom_2_light
+
+turn_off_all_lights:
+  sequence:
+    - service: switch.turn_off
+      entity_id: switch.livingroom_1_light
+    - service: switch.turn_off
+      entity_id: switch.livingroom_2_light
+    - service: switch.turn_off
+      entity_id: switch.entrance_light
+    - service: switch.turn_off
+      entity_id: switch.kitchen_light
+    - service: switch.turn_off
+      entity_id: switch.porch_light
+    - service: switch.turn_off
+      entity_id: switch.hall_1_light
+    - service: switch.turn_off
+      entity_id: switch.hall_2_light
+    - service: switch.turn_off
+      entity_id: switch.master_bedroom_light
+    - service: switch.turn_off
+      entity_id: switch.kids_room_light
+    - service: switch.turn_off
+      entity_id: switch.kids_room_night_light
+    - service: switch.turn_off
+      entity_id: switch.shower_room_light
+    - service: switch.turn_off
+      entity_id: switch.bathroom_light
+    - service: switch.turn_off
+      entity_id: switch.toilet_light
+    - service: switch.turn_off
+      entity_id: switch.lantern_lamp
+    - service: switch.turn_off
+      entity_id: switch.blue_vintage_lamp
+
