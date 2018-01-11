@@ -1,0 +1,7 @@
+motion_switches:
+  name: "Motion Switches"
+  control: hidden
+  entities:
+    - automation.front_door_sensor_status
+    - automation.porch_door_sensor_status
+    - automation.living_room_motion_sensor_status

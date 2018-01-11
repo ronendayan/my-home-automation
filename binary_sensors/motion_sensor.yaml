@@ -1,0 +1,21 @@
+- platform: mqtt
+  name: "Front Door Sensor"
+  state_topic: "rfbridge/relay/0"
+  payload_on: 1
+  payload_off: 0
+  device_class: opening
+
+- platform: mqtt
+  name: "Porch Door Sensor"
+  state_topic: "rfbridge/relay/1"
+  payload_on: 1
+  payload_off: 0
+  device_class: opening
+
+- platform: mqtt
+  name: "Living Room Motion Sensor"
+  state_topic: "rfbridge/relay/2"
+  payload_on: 1
+  payload_off: 0
+  device_class: motion
+

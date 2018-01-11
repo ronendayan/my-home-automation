@@ -1,0 +1,5 @@
+Motion:
+  entities:
+    - binary_sensor.front_door_sensor
+    - binary_sensor.porch_door_sensor
+    - binary_sensor.living_room_motion_sensor

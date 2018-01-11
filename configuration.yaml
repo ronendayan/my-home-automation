@@ -70,12 +70,28 @@ tts:
 #datadog:
 
 ffmpeg:
-  ffmpeg_bin: /usr/bin/avconv
+#  ffmpeg_bin: /usr/bin/avconv
+  ffmpeg_bin: /usr/bin/ffmpeg
 
-camera:
-  - platform: ffmpeg
-    input: !secret camera_input
-    name: 'Kids Room'
+#camera:
+#  - platform: onvif
+#    host: !secret camera_input
+#    name: 'Kids Room'
+#    port: 554
+#  - platform: ffmpeg
+#    input: !secret camera_input
+#    name: 'Kids Room'
+#    extra_arguments: -q:v 2
+#  - platform: yi
+#    name: "Living Room"
+#    host: !secret yi_camera_host
+#    password: !secret yi_camera_password
+#    extra_arguments: '-vf scale=800:450'
+  
+#logger:
+#  default: warning
+#  logs:
+#    homeassistant.components.camera.ffmpeg: debug
 
 media_player:
 #  - platform: kodi

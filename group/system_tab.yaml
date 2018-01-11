@@ -9,3 +9,6 @@ System:
     - group.certificates
     - group.automations
     - camera.kids_room
+    - camera.living_room
+    - group.motion
+    - group.motion_switches
