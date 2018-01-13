@@ -11,6 +11,9 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Asia/Jerusalem
   customize: !include_dir_merge_named customize
+  
+  whitelist_external_dirs:
+    - '/mnt/iomega/hass/snapshots'
 
 map:
 
@@ -32,6 +35,7 @@ frontend:
 
 http:
   # Uncomment this to add a password (recommended!)
+  #api_password: !secret http_api_password
   api_password: !secret http_api_password
   # Uncomment this if you are using SSL or running in Docker etc
   base_url: !secret http_base_url
@@ -70,28 +74,26 @@ tts:
 #datadog:
 
 ffmpeg:
-#  ffmpeg_bin: /usr/bin/avconv
   ffmpeg_bin: /usr/bin/ffmpeg
 
-#camera:
-#  - platform: onvif
-#    host: !secret camera_input
-#    name: 'Kids Room'
-#    port: 554
-#  - platform: ffmpeg
-#    input: !secret camera_input
-#    name: 'Kids Room'
-#    extra_arguments: -q:v 2
-#  - platform: yi
-#    name: "Living Room"
-#    host: !secret yi_camera_host
-#    password: !secret yi_camera_password
-#    extra_arguments: '-vf scale=800:450'
+camera:
+  - platform: ffmpeg
+    input: !secret camera_input
+    name: 'Kids Room'
+    extra_arguments: -q:v 2
+  - platform: yi
+    name: "Living Room"
+    host: !secret yi_camera_host
+    password: !secret yi_camera_password
+    ffmpeg_bin: /usr/bin/ffmpeg  
+    #extra_arguments: '-vf scale=800:450'
   
 #logger:
 #  default: warning
 #  logs:
 #    homeassistant.components.camera.ffmpeg: debug
+#    homeassistant.components.camera.yi: debug
+
 
 media_player:
 #  - platform: kodi

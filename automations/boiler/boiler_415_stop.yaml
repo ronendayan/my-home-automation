@@ -1,0 +1,7 @@
+alias: 'Turn off automatic boiler 4:15'
+trigger:
+  - platform: time
+    at: '04:20'
+action:
+  - service: automation.turn_off
+    entity_id: automation.turn_on_boiler_at_415
