@@ -1,14 +1,14 @@
 System:
   view: yes
   name: "System"
+  icon: mdi:settings
   entities:
     - group.servers
     - group.processes
     - group.storage
     - group.speedtest
+    - group.transmission
     - group.certificates
     - group.automations
-    - camera.kids_room
-    - camera.living_room
-    - group.motion
     - group.motion_switches
+    - group.temperatures

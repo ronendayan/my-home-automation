@@ -1,13 +1,11 @@
 Media:
   view: yes
   name: "Media"
+  icon: mdi:movie
   entities:
-    - group.transmission
     - media_player.beelink
 #    - media_player.osmc
     - group.kodi_buttons
     - media_player.spotify
 #    - media_player.amazon_fire_tv
     - media_player.living_room_tv
-    - group.twitch_vainglory
-    - group.twitch_paladins

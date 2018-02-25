@@ -26,4 +26,3 @@
       turn_off:
         service: script.turn_on
         entity_id: script.motion_switches_off
-

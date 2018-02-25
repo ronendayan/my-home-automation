@@ -1,0 +1,8 @@
+- platform: mqtt
+  name: "All Lights Off"
+  state_topic: "home/esp8266_c8d52f00"
+  command_topic: "home/esp8266_c8d52f00"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true

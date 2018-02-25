@@ -33,9 +33,13 @@ turn_off_all_lights:
     - service: switch.turn_off
       entity_id: switch.kids_room_light
     - service: switch.turn_off
+      entity_id: switch.safe_room_light
+    - service: switch.turn_off
       entity_id: switch.kids_room_night_light
     - service: switch.turn_off
       entity_id: switch.shower_room_light
+    - service: switch.turn_off
+      entity_id: switch.wardrobe_light
     - service: switch.turn_off
       entity_id: switch.bathroom_light
     - service: switch.turn_off

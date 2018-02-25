@@ -8,3 +8,4 @@ Switches:
     - scene.samsung_sb_source
     - switch.kitchen_radio
 #    - switch.boiler_switch
+    - switch.all_lights_off

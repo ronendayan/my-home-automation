@@ -1,0 +1,7 @@
+- platform: mqtt
+  name: "Kitchen Fire Alarm"
+  state_topic: "rfbridge/relay/3"
+  payload_on: 1
+  payload_off: 0
+  device_class: smoke
+

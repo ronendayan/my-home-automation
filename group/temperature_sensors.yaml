@@ -1,0 +1,3 @@
+Temperatures:
+  entities:
+    - sensor.safe_room_temperature

@@ -1,0 +1,4 @@
+- platform: mqtt
+  state_topic: "home/esp8266_e09f3500"
+  name: "Safe Room Temperature"
+  unit_of_measurement: '°C'

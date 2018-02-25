@@ -1,5 +1,6 @@
 default_view:
   view: yes
+  icon: mdi:home
   entities:
 #    - group.channels
     - group.hdmi_switch

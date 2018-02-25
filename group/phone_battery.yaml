@@ -3,5 +3,5 @@ phone_battery:
   control: hidden
   entities:
     - sensor.battery_level__ronen
-    - sensor.battery_level__michal
+#    - sensor.battery_level__michal
 

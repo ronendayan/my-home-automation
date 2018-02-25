@@ -1,6 +1,7 @@
 info:
   view: yes
   name: "Info"
+  icon: mdi:information
   entities:
     - group.weather
     - group.traffic

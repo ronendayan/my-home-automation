@@ -4,6 +4,10 @@
 #  emulated_hue_hidden: false
 #  emulated_hue_name: "TV"
 
+switch.all_lights_off:
+  friendly_name: 'All Lights Off'
+  icon: mdi:power
+
 switch.livingroom_tv:
   friendly_name: 'Livingroom TV'
   icon: mdi:television

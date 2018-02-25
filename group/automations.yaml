@@ -5,3 +5,4 @@ automations:
     - automation.turn_off_boiler_after_1_hour
     - automation.turn_off_all_lights_when_nobody_home
     - automation.turn_off_transmission_turtle_at_200
+    - automation.turn_off_all_lights
