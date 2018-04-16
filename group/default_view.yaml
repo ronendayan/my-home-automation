@@ -16,5 +16,6 @@ default_view:
 #    - device_tracker.backpack
     - sun.sun
     - device_tracker.ronen_oneplus2
+    - device_tracker.google_maps_115009359603126471444
     - device_tracker.ronen_hwcan
     - group.boiler_timers

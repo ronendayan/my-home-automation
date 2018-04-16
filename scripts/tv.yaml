@@ -1,13 +1,13 @@
 livingroom_tv_on:
   sequence:
     - service: switch.turn_on
-      entity_id: switch.tv
+      entity_id: switch.tv_toshiba
     - service: switch.turn_on
-      entity_id: switch.samsung_soundbar
+      entity_id: switch.samsung_sb
 
 livingroom_tv_off:
   sequence:
     - service: switch.turn_off
-      entity_id: switch.tv
+      entity_id: switch.tv_toshiba
     - service: switch.turn_off
-      entity_id: switch.samsung_soundbar
+      entity_id: switch.samsung_sb

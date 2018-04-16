@@ -14,6 +14,7 @@ homeassistant:
   
   whitelist_external_dirs:
     - '/mnt/iomega/hass/snapshots'
+    - '/home/homeassistant/.homeassistant'
 
 map:
 
@@ -62,6 +63,13 @@ logbook:
 
 # Track the sun
 sun:
+
+freedns:
+  access_token: !secret freedns_token
+
+duckdns:
+  domain: !secret duckdns_domain
+  access_token: !secret duckdns_token
 
 # Weather Prediction
 #sensor:
@@ -135,7 +143,7 @@ device_tracker: !include_dir_merge_list trackers
 group: !include_dir_merge_named group
 input_boolean: !include input_boolean.yaml
 input_number: !include input_number.yaml
-#light: !include lights.yaml
+#light: !includ_dir_merge_list lights/
 mqtt: !include servers/mqtt.yaml
 notify: !include_dir_merge_list notifiers
 #panel_iframe: !include_dir_named iframes

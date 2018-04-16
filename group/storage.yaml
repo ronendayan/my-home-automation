@@ -1,3 +1,5 @@
 Storage:
   entities:
-    - sensor.disk_used_mntiomega
+    - sensor.disk_use_percent_
+    - sensor.disk_use_percent_mntiomega
+    - sensor.homeassistant_v2db

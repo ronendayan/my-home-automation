@@ -3,8 +3,15 @@ trigger:
   platform: template
   value_template: "{% if is_state('binary_sensor.kids_room_window', 'on') %}true{% endif %}"
 action:
-  service: notify.ronen_pushbullet
-  data:
-    title: "Motion Detect"
-    message: "Kids room window got opened"
+  service: notify.hass
+  data_template:
+    message: ""
+    data:
+      attachments:
+      - color: >
+          #800040
+        title: >
+          {{ trigger.to_state.attributes.friendly_name }}
+        text: |
+          Time: {{now().strftime("%c")}}
 

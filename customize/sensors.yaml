@@ -1,3 +1,17 @@
 sensor.ssl_certificate_expiry:
   friendly_name: !secret http_base_url
   icon: mdi:certificate
+
+sensor.disk_use_percent_mntiomega:
+  friendly_name: 'Disk Usage: iOmega'
+  icon: mdi:harddisk
+
+sensor.disk_use_percent_:
+  friendly_name: 'Disk Usage: /'
+  icon: mdi:harddisk
+
+sensor.battery_level__ronen:
+  icon: mdi:battery
+
+sensor.battery_level__michal:
+  icon: mdi:battery

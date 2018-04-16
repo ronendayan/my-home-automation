@@ -1,0 +1,48 @@
+#- platform: google_travel_time
+#  name: "Ronen's Work"
+#  api_key: !secret google_travel_time_api_key
+#  origin: zone.home
+#  destination: zone.ronen_work
+#
+#- platform: google_travel_time
+#  name: "Ronen's Home"
+#  api_key: !secret google_travel_time_api_key
+#  origin: zone.ronen_work
+#  destination: zone.home
+#
+#- platform: google_travel_time
+#  name: "Michal's Work"
+#  api_key: !secret google_travel_time_api_key
+#  origin: zone.home
+#  destination: zone.michal_work
+#
+#- platform: google_travel_time
+#  name: "Michal's Home"
+#  api_key: !secret google_travel_time_api_key
+#  origin: zone.michal_work
+#  destination: zone.home
+
+- platform: waze_travel_time
+  name: "Ronen's Work" 
+  origin: !secret home_address
+  destination: !secret ronen_work_address
+  region: 'IL'
+
+- platform: waze_travel_time
+  name: "Michal's Work"
+  origin: !secret home_address
+  destination: !secret michal_work_address
+  region: 'IL'
+
+- platform: waze_travel_time
+  name: "Ronen's Home"
+  origin: !secret ronen_work_address
+  destination: !secret home_address
+  region: 'IL'
+
+- platform: waze_travel_time
+  name: "Michal's Home"
+  origin: !secret michal_work_address
+  destination: !secret home_address
+  region: 'IL'
+

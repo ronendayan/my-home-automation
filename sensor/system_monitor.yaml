@@ -2,3 +2,5 @@
   resources:
     - type: disk_use_percent
       arg: /mnt/iomega
+    - type: disk_use_percent
+      arg: /

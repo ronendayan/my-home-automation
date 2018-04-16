@@ -9,7 +9,3 @@ scene.library_scan_beelink:
 scene.library_clean_beelink:
   friendly_name: 'Library Clean - Beelink'
   icon: mdi:notification-clear-all
-
-sensor.disk_use_mntiomega:
-  friendly_name: 'Disk Usage: iOmega'
-  icon: mdi:harddisk

@@ -26,7 +26,7 @@
 
 - name: "Amazon Fire TV"
   entities:
-    switch.amazon_fire_tv: on
+    switch.amazon_firetv: on
 
 - name: "Chromecast_living_room"
   entities:

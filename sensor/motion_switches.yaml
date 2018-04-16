@@ -1,6 +1,6 @@
 - platform: template
   sensors:
     motion_switches_state:
-      value_template: "{% if is_state('automation.front_door_sensor_status', 'on') and is_state('automation.porch_door_sensor_status', 'on') and is_state('automation.living_room_motion_sensor_status', 'on') %}on{% else %}off{% endif %}"
+      value_template: "{% if is_state('automation.front_door_status', 'on') and is_state('automation.porch_door_status', 'on') and is_state('automation.living_room_motion_status', 'on') and is_state('automation.kids_room_window_status', 'on') %}on{% else %}off{% endif %}"
       friendly_name: 'Motion Switches State'
 

@@ -1,0 +1,3 @@
+- platform: filesize
+  file_paths:
+    - /home/homeassistant/.homeassistant/home-assistant_v2.db

@@ -15,7 +15,7 @@ switch.livingroom_tv:
   emulated_hue_hidden: false
   emulated_hue_name: "TV"
 
-switch.samsung_soundbar:
+switch.samsung_sb:
   friendly_name: 'Samsung Soundbar'
   icon: mdi:speaker
   assumed_state: true

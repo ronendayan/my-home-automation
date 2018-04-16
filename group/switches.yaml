@@ -4,7 +4,7 @@ Switches:
     - switch.livingroom_tv
 #    - switch.tv
 #    - switch.bedroom_fan
-    - switch.samsung_soundbar
+    - switch.samsung_sb
     - scene.samsung_sb_source
     - switch.kitchen_radio
 #    - switch.boiler_switch

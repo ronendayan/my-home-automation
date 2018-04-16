@@ -4,6 +4,6 @@ device_tracker.ronen_oneplus2:
 device_tracker.ronen_hwcan:
   friendly_name: 'Michal'
   icon: mdi:account
-device_tracker.849fb5798e26:
-  friendly_name: 'Michal'
+device_tracker.google_maps_115009359603126471444:
+  friendly_name: 'Ronen Google'
   icon: mdi:account

@@ -1,7 +1,7 @@
-alias: 'Living Room Motion Sensor Status'
+alias: 'Living Room Motion Status'
 trigger:
   platform: template
-  value_template: "{% if is_state('binary_sensor.living_room_motion_sensor', 'on') %}true{% endif %}"
+  value_template: "{% if is_state('binary_sensor.living_room_motion', 'on') %}true{% endif %}"
 condition:
   condition: time
   after: '09:00'
@@ -13,8 +13,15 @@ condition:
    - wed
    - thu
 action:
-  service: notify.ronen_pushbullet
-  data:
-    title: "Motion Detect"
-    message: "Got motion in the living room"
+  service: notify.hass
+  data_template:
+    message: ""
+    data:
+      attachments:
+      - color: >
+          #800040
+        title: >
+          {{ trigger.to_state.attributes.friendly_name }}
+        text: |
+          Time: {{now().strftime("%c")}}
 
