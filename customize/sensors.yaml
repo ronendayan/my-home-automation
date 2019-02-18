@@ -9,9 +9,3 @@ sensor.disk_use_percent_mntiomega:
 sensor.disk_use_percent_:
   friendly_name: 'Disk Usage: /'
   icon: mdi:harddisk
-
-sensor.battery_level__ronen:
-  icon: mdi:battery
-
-sensor.battery_level__michal:
-  icon: mdi:battery

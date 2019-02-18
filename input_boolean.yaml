@@ -3,3 +3,4 @@ boiler_timer:
   initial: off
   icon: mdi:timer
 
+weather:

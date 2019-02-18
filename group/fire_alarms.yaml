@@ -1,4 +1,4 @@
 fire_alarms:
   name: "Fire Alarms"
   entities:
-    - binary_sensor.kitchen_fire_alarm
+    - automation.kitchen_fire_alarm

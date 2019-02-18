@@ -1,48 +1,26 @@
-#- name: "Movie Time"
+#- name: "Kodi"
 #  entities:
-#    switch.android: on
-#    switch.vintage_lamp: off
-#    switch.corner_light: off
-#    light.tower_light:
-#      state: on
-#      rgb_color: [204, 204, 0]
-#      brightness: 150
+#    switch.kodi: on
 
-#- name: "Channel 2"
+#- name: "Amazon Fire TV"
 #  entities:
-#    script.channel_2: on
+#    switch.amazon_firetv: on
 
-#- name: "Channel 10"
+#- name: "Chromecast_living_room"
 #  entities:
-#    script.channel_10: on
+#    switch.chromecast_living_room: on
 
-- name: "Kodi"
-  entities:
-    switch.kodi: on
-
-- name: "Live TV"
-  entities:
-    switch.live_tv: on
-
-- name: "Amazon Fire TV"
-  entities:
-    switch.amazon_firetv: on
-
-- name: "Chromecast_living_room"
-  entities:
-    switch.chromecast_living_room: on
-
-- name: "Stop Kodi Beelink"
-  entities:
-    script.stop_kodi_beelink: on
-
-- name: "Library Scan Beelink"
-  entities:
-    script.library_scan_beelink: on
-
-- name: "Library Clean Beelink"
-  entities:
-    script.library_clean_beelink: on
+#- name: "Stop Kodi Beelink"
+#  entities:
+#    script.stop_kodi_beelink: on
+#
+#- name: "Library Scan Beelink"
+#  entities:
+#    script.library_scan_beelink: on
+#
+#- name: "Library Clean Beelink"
+#  entities:
+#    script.library_clean_beelink: on
 
 - name: "Samsung SB Source"
   entities:

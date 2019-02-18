@@ -29,7 +29,7 @@
   region: 'IL'
 
 - platform: waze_travel_time
-  name: "Michal's Work"
+  name: "Michal's Work TLV"
   origin: !secret home_address
   destination: !secret michal_work_address
   region: 'IL'
@@ -41,8 +41,19 @@
   region: 'IL'
 
 - platform: waze_travel_time
-  name: "Michal's Home"
+  name: "Michal's Home TLV"
   origin: !secret michal_work_address
   destination: !secret home_address
   region: 'IL'
 
+- platform: waze_travel_time
+  name: "Michal's Work BY"
+  origin: !secret home_address
+  destination: !secret michal_work_by_address
+  region: 'IL'
+
+- platform: waze_travel_time
+  name: "Michal's Home BY"
+  origin: !secret michal_work_by_address
+  destination: !secret home_address
+  region: 'IL'

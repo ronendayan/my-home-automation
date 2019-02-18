@@ -2,16 +2,3 @@ switch.motion_switches:
   friendly_name: "Motion Switches"
   google_assistant: true
   google_assistant_type: switch
-
-automation.front_door_status:
-  friendly_name: "Front Door Sensor"
-
-automation.porch_door_status:
-  friendly_name: "Porch Door Sensor"
-
-automation.living_room_motion_status:
-  friendly_name: "Living Room Motion Sensor"
-
-automation.kids_room_window_status:
-  friendly_name: "Kids Room Window Sensor"
-

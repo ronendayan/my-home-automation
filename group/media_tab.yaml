@@ -5,7 +5,8 @@ Media:
   entities:
     - media_player.beelink
 #    - media_player.osmc
-    - group.kodi_buttons
+#    - group.kodi_buttons
     - media_player.spotify
 #    - media_player.amazon_fire_tv
     - media_player.living_room_tv
+    - media_player.home

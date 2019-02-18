@@ -1,5 +1,5 @@
 - platform: template
   sensors:
     livingroom_lights_state:
-      value_template: "{% if is_state('switch.livingroom_1_light', 'on') and is_state('switch.livingroom_2_light', 'on') %}on{% else %}off{% endif %}"
+      value_template: "{% if is_state('switch.espurna_living_room_1', 'on') and is_state('switch.espurna_living_room_2', 'on') %}on{% else %}off{% endif %}"
       friendly_name: 'Livingroom Lights State'

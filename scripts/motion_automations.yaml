@@ -1,23 +1,23 @@
 motion_switches_on:
   sequence:
     - service: automation.turn_on
-      entity_id: automation.front_door_status
+      entity_id: automation.front_door_sensor
     - service: automation.turn_on
-      entity_id: automation.porch_door_status
+      entity_id: automation.porch_door_sensor
     - service: automation.turn_on
-      entity_id: automation.living_room_motion_status
+      entity_id: automation.living_room_motion_sensor
     - service: automation.turn_on
-      entity_id: automation.kids_room_window_status
+      entity_id: automation.kids_room_window_sensor
 
 motion_switches_off:
   sequence:
     - service: automation.turn_off
-      entity_id: automation.front_door_status
+      entity_id: automation.front_door_sensor
     - service: automation.turn_off
-      entity_id: automation.porch_door_status
+      entity_id: automation.porch_door_sensor
     - service: automation.turn_off
-      entity_id: automation.living_room_motion_status
+      entity_id: automation.living_room_motion_sensor
     - service: automation.turn_off
-      entity_id: automation.kids_room_window_status
+      entity_id: automation.kids_room_window_sensor
 
 

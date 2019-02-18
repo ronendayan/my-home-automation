@@ -3,9 +3,9 @@ info:
   name: "Info"
   icon: mdi:information
   entities:
-    - group.weather
     - group.dark_sky
     - group.traffic
-    - group.phone_battery
     - group.airvisual
+      #- group.pi_hole
     - sensor.current_version
+    - group.weather

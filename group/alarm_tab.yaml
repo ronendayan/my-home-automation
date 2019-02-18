@@ -3,7 +3,7 @@ Alarm:
   name: "Alarm"
   icon: mdi:cctv
   entities:
-    - camera.kids_room
-    - camera.living_room
+          #- camera.kids_room
+          #- camera.living_room
     - group.motion
-    - group.fire_alarms
+    - group.smoke_detectors

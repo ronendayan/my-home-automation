@@ -1,11 +1,18 @@
 - name: Ronen_Work
   latitude: 31.988477
   longitude: 34.909142
-  radius: 500
+  radius: 150
   icon: mdi:briefcase
 
-- name: Michal_Work
+- name: Michal_Work_TLV
   latitude: 32.061805
   longitude: 34.788615
-  radius: 500
+  radius: 150
   icon: mdi:briefcase
+
+- name: Michal_Work_BY
+  latitude: 32.006492
+  longitude: 34.745851
+  radius: 150
+  icon: mdi:briefcase
+

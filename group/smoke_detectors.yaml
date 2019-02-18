@@ -1,0 +1,4 @@
+smoke_detectors:
+  name: "Smoke Detectors"
+  entities:
+    - binary_sensor.kitchen_fire_alarm

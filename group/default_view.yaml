@@ -3,19 +3,16 @@ default_view:
   icon: mdi:home
   entities:
 #    - group.channels
-    - group.hdmi_switch
+#    - group.hdmi_switch
     - group.home_lights
     - group.rooms_lights
     - group.switches
     - group.boiler
     - group.lamps
-#    - group.scenes
-#    - group.air_conditioner
-#    - group.weather
-#    - group.traffic
-#    - device_tracker.backpack
     - sun.sun
-    - device_tracker.ronen_oneplus2
+#    - device_tracker.ronen_oneplus2
     - device_tracker.google_maps_115009359603126471444
-    - device_tracker.ronen_hwcan
+#    - device_tracker.ronen_hwcan
+    - device_tracker.google_maps_107257195636911026742
     - group.boiler_timers
+    - fan.bedroom_fan

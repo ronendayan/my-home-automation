@@ -1,9 +1,9 @@
 - platform: orvibo
   discovery: false
   switches:
-    host: !secret orvibo_host
-    mac: !secret orvibo_mac
-    name: "Kitchen Radio"
+    - host: !secret orvibo_host
+      mac: !secret orvibo_mac
+      name: "Kitchen Radio"
 
 #- platform: tplink
 #  host: !secret tplink_host
@@ -23,6 +23,68 @@
 #  payload_on: "on"
 #  payload_off: "off"
 #  retain: true
+
+- platform: mqtt
+  name: "espurna_safe_room"
+  state_topic: "espurna-safe-room/relay/0"
+  command_topic: "espurna-safe-room/relay/0/set"
+  payload_on: "1"
+  payload_off: "0"
+  availability_topic: espurna-safe-room/status
+  payload_available: 1
+  payload_not_available: 0
+
+- platform: mqtt
+  name: "espurna_kids_room_1"
+  state_topic: "espurna-kids-room-1/relay/0"
+  command_topic: "espurna-kids-room-1/relay/0/set"
+  payload_on: "1"
+  payload_off: "0"
+  availability_topic: espurna-kids-room-1/status
+  payload_available: 1
+  payload_not_available: 0
+
+- platform: mqtt
+  name: "espurna_kids_room_2"
+  state_topic: "espurna-kids-room-2/relay/0"
+  command_topic: "espurna-kids-room-2/relay/0/set"
+  payload_on: "1"
+  payload_off: "0"
+  availability_topic: espurna-kids-room-2/status
+  payload_available: 1
+  payload_not_available: 0
+
+- platform: mqtt
+  name: "espurna_kitchen"
+  state_topic: "espurna-kitchen/relay/0"
+  command_topic: "espurna-kitchen/relay/0/set"
+  payload_on: "1"
+  payload_off: "0"
+  availability_topic: espurna-kitchen/status
+  payload_available: 1
+  payload_not_available: 0
+
+- platform: mqtt
+  name: espurna_living_room_1
+  state_topic: espurna-living-room-1/relay/0
+  command_topic: espurna-living-room-1/relay/0/set
+  payload_on: 1
+  payload_off: 0
+  availability_topic: espurna-living-room-1/status
+  payload_available: 1
+  payload_not_available: 0
+
+- platform: mqtt
+  name: espurna_living_room_2
+  state_topic: espurna-living-room-2/relay/0
+  command_topic: espurna-living-room-2/relay/0/set
+  payload_on: 1
+  payload_off: 0
+  availability_topic: espurna-living-room-2/status
+  payload_available: 1
+  payload_not_available: 0
+
+
 
 - platform: mqtt
   name: "lantern_lamp"
@@ -87,50 +149,50 @@
   payload_off: "off"
   retain: true
 
-- platform: mqtt
-  name: "kids_room_light"
-  state_topic: "home/sonoff_touch/kids_room/1/stat"
-  command_topic: "home/sonoff_touch/kids_room/1"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+  #- platform: mqtt
+  #  name: "ikids_room_light"
+  #  state_topic: "home/sonoff_touch/kids_room/1/stat"
+  #  command_topic: "home/sonoff_touch/kids_room/1"
+  #  qos: 0
+  #  payload_on: "on"
+  #  payload_off: "off"
+  #  retain: true
 
-- platform: mqtt
-  name: "kids_room_night_light"
-  state_topic: "home/sonoff_touch/kids_room/2/stat"
-  command_topic: "home/sonoff_touch/kids_room/2"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+  #- platform: mqtt
+  #  name: "kids_room_night_light"
+  #  state_topic: "home/sonoff_touch/kids_room/2/stat"
+  #  command_topic: "home/sonoff_touch/kids_room/2"
+  #  qos: 0
+  #  payload_on: "on"
+  #  payload_off: "off"
+  #  retain: true
 
-- platform: mqtt
-  name: "kitchen_light"
-  state_topic: "home/sonoff_touch/kitchen/1/stat"
-  command_topic: "home/sonoff_touch/kitchen/1"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+  #- platform: mqtt
+  #  name: "kitchen_light"
+  #  state_topic: "home/sonoff_touch/kitchen/1/stat"
+  #  command_topic: "home/sonoff_touch/kitchen/1"
+  #  qos: 0
+  #  payload_on: "on"
+  #  payload_off: "off"
+  #  retain: true
 
-- platform: mqtt
-  name: "livingroom_1_light"
-  state_topic: "home/sonoff_touch/livingroom/1/stat"
-  command_topic: "home/sonoff_touch/livingroom/1"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+#- platform: mqtt
+#  name: "livingroom_1_light"
+#  state_topic: "home/sonoff_touch/livingroom/1/stat"
+#  command_topic: "home/sonoff_touch/livingroom/1"
+#  qos: 0
+#  payload_on: "on"
+#  payload_off: "off"
+#  retain: true
 
-- platform: mqtt
-  name: "livingroom_2_light"
-  state_topic: "home/sonoff_touch/livingroom/2/stat"
-  command_topic: "home/sonoff_touch/livingroom/2"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+  #- platform: mqtt
+  #  name: "livingroom_2_light"
+  #  state_topic: "home/sonoff_touch/livingroom/2/stat"
+  #  command_topic: "home/sonoff_touch/livingroom/2"
+  #  qos: 0
+  #  payload_on: "on"
+  #  payload_off: "off"
+  #  retain: true
 
 - platform: mqtt
   name: "master_bedroom_light"
@@ -141,14 +203,14 @@
   payload_off: "off"
   retain: true
 
-- platform: mqtt
-  name: "safe_room_light"
-  state_topic: "home/sonoff_touch/safe_room/1/stat"
-  command_topic: "home/sonoff_touch/safe_room/1"
-  qos: 0
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+  #- platform: mqtt
+  #  name: "safe_room_light"
+  #  state_topic: "home/sonoff_touch/safe_room/1/stat"
+  #  command_topic: "home/sonoff_touch/safe_room/1"
+  #  qos: 0
+  #  payload_on: "on"
+  #  payload_off: "off"
+  #  retain: true
 
 - platform: mqtt
   name: "porch_light"

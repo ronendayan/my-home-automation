@@ -1,7 +1,7 @@
-alias: 'Front Door Sensor'
+alias: 'Kitchen Fire Alarm'
 trigger:
   - platform: template
-    value_template: "{% if is_state('binary_sensor.front_door', 'on') %}true{% endif %}"
+    value_template: "{% if is_state('binary_sensor.kitchen_fire_alarm', 'on') %}true{% endif %}"
 action:
   service: notify.hass
   data_template:

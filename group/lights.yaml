@@ -2,10 +2,13 @@ Home_Lights:
  name: "Home Lights"
  entities:
    - switch.living_room_lights
-   - switch.livingroom_1_light
-   - switch.livingroom_2_light
+     #- switch.livingroom_1_light
+   - switch.espurna_living_room_1
+     #- switch.livingroom_2_light
+   - switch.espurna_living_room_2
    - switch.entrance_light
-   - switch.kitchen_light
+     #- switch.kitchen_light
+   - switch.espurna_kitchen
    - switch.porch_light
    - switch.hall_1_light
    - switch.hall_2_light
@@ -14,9 +17,12 @@ Rooms_lights:
  name: "Rooms Lights"
  entities:
    - switch.master_bedroom_light
-   - switch.kids_room_light
-   - switch.kids_room_night_light
-   - switch.safe_room_light
+     #- switch.kids_room_light
+   - switch.espurna_kids_room_1
+   - switch.espurna_kids_room_2
+     #- switch.kids_room_night_light
+     #- switch.safe_room_light
+   - switch.espurna_safe_room
    - switch.shower_room_light
    - switch.wardrobe_light
    - switch.bathroom_light

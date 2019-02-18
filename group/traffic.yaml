@@ -2,5 +2,7 @@ Traffic:
   entities:
     - sensor.ronens_work
     - sensor.ronens_home
-    - sensor.michals_work
-    - sensor.michals_home
+    - sensor.michals_work_tlv
+    - sensor.michals_home_tlv
+    - sensor.michals_work_by
+    - sensor.michals_home_by

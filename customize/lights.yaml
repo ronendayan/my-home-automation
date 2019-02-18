@@ -1,3 +1,10 @@
+switch.espurna_safe_room:
+        friendly_name: 'Safe Room Light'
+        icon: mdi:lightbulb
+        assumed_state: false
+        emulated_hue_hidden: false
+        emulated_hue_name: "Safe Room Light"
+
 switch.lantern_lamp:
   friendly_name: 'Lantern Lamp'
   icon: mdi:lamp
@@ -31,12 +38,14 @@ switch.living_room_lights:
   emulated_hue_hidden: false
   emulated_hue_name: "Living Room Lights" 
 
-switch.livingroom_1_light:
+  #switch.livingroom_1_light:
+switch.espurna_living_room_1:
   friendly_name: 'Living Room 1 Light'
   icon: mdi:lightbulb
   assumed_state: false
    
-switch.livingroom_2_light:
+  #switch.livingroom_2_light:
+switch.espurna_living_room_2:
   friendly_name: 'Living Room 2 Light'
   icon: mdi:lightbulb
   assumed_state: false
@@ -48,12 +57,13 @@ switch.entrance_light:
   emulated_hue_hidden: false
   emulated_hue_name: "Entrance Light"
 
-switch.kitchen_light:
+  #switch.kitchen_light:
+switch.espurna_kitchen:
   friendly_name: 'Kitchen Light'
   icon: mdi:lightbulb
   assumed_state: false
-  emulated_hue_hidden: false
-  emulated_hue_name: "Kitchen Light"
+  #  emulated_hue_hidden: false
+  #  emulated_hue_name: "Kitchen Light"
 
 switch.porch_light:
   friendly_name: 'Porch Light'
@@ -85,26 +95,28 @@ switch.master_bedroom_light:
   emulated_hue_hidden: false
   emulated_hue_name: "Master Bedroom Light"
 
-switch.kids_room_light:
+  #switch.kids_room_light:
+switch.espurna_kids_room_1:
   friendly_name: 'Kids Room Light'
   icon: mdi:lightbulb
   assumed_state: false
   emulated_hue_hidden: false
   emulated_hue_name: "Kids Room Light"
 
-switch.kids_room_night_light:
+  #switch.kids_room_night_light:
+switch.espurna_kids_room_2:
   friendly_name: 'Kids Room Night Light'
   icon: mdi:lightbulb
   assumed_state: false
   emulated_hue_hidden: false
   emulated_hue_name: "Kids Room Night Light"
 
-switch.safe_room_light:
-  friendly_name: 'Safe Room Light'
-  icon: mdi:lightbulb
-  assumed_state: false
-  emulated_hue_hidden: false
-  emulated_hue_name: "Safe Room Light"
+  #switch.safe_room_light:
+  #  friendly_name: 'Safe Room Light'
+  #  icon: mdi:lightbulb
+  #  assumed_state: false
+  #  emulated_hue_hidden: false
+  #  emulated_hue_name: "Safe Room Light"
 
 switch.shower_room_light:
   friendly_name: 'Shower Room Light'

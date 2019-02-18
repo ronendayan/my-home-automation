@@ -1,0 +1,4 @@
+Weather:
+  name: Weather
+  entities:
+    - input_boolean.weather

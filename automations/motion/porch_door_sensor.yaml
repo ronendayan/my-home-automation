@@ -1,4 +1,4 @@
-alias: 'Porch Door Status'
+alias: 'Porch Door Sensor'
 trigger:
   platform: template
   value_template: "{% if is_state('binary_sensor.porch_door', 'on') %}true{% endif %}"

@@ -23,6 +23,10 @@ map:
 
 # Enables the frontend
 frontend:
+  extra_html_url:
+    - /local/custom_ui/custom-weather-card.html
+  extra_html_url_es5:
+    - /local/custom_ui/custom-weather-card.html
   themes:
     azure:
       primary-color: azure
@@ -32,6 +36,9 @@ frontend:
       primary-color: blue
     darkred:
       primary-color: darkred
+
+weather:
+  - platform: yweather
 
 
 http:
@@ -84,16 +91,16 @@ tts:
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg
 
-camera:
-  - platform: ffmpeg
-    input: !secret camera_input
-    name: 'Kids Room'
-    extra_arguments: -q:v 2
-  - platform: yi
-    name: "Living Room"
-    host: !secret yi_camera_host
-    password: !secret yi_camera_password
-    ffmpeg_bin: /usr/bin/ffmpeg  
+  #camera:
+        #  - platform: ffmpeg
+        #    input: !secret camera_input
+        #    name: 'Kids Room'
+        #    extra_arguments: -q:v 2
+        #  - platform: yi
+        #    name: "Living Room"
+        #    host: !secret yi_camera_host
+        #    password: !secret yi_camera_password
+        #    ffmpeg_bin: /usr/bin/ffmpeg  
     #extra_arguments: '-vf scale=800:450'
   
 #logger:
@@ -109,21 +116,23 @@ media_player:
 #    host: !secret media_player_host_osmc
 #    username: !secret media_player_username_osmc
 #    password: !secret media_player_password_osmc
-  - platform: kodi
-    name: BeeLink
-    host: !secret media_player_host_beelink
-    username: !secret media_player_username_beelink
-    password: !secret media_player_password_beelink
+#  - platform: kodi
+#    name: BeeLink
+#    host: !secret media_player_host_beelink
+#    username: !secret media_player_username_beelink
+#    password: !secret media_player_password_beelink
   - platform: spotify
     name: Spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
 #  - platform: firetv
   - platform: cast
+    host: !secret mibox_ip
+  - platform: cast
+    host: !secret google_home_mini_ip
 
 emulated_hue:
   host_ip: !secret emulated_hue_host_ip
-  type: alexa
   listen_port: 8300
   expose_by_default: false
 
@@ -136,6 +145,32 @@ google_assistant:
   exposed_domains:
     - switch
 
+
+fan:
+  - platform: mqtt
+    name: "Bedroom Fan"
+    state_topic: "home/fan/state"
+    command_topic: "home/fan/set"
+    speed_state_topic: "home/fan/speed/state"
+    speed_command_topic: "home/fan/speed/set"
+    payload_on: "on"
+    payload_off: "off"
+    payload_low_speed: "low"
+    payload_medium_speed: "medium"
+    payload_high_speed: "high"
+    speeds:
+      - low
+      - medium
+      - high
+ 
+
+
+
+
+
+
+
+ 
 alert: !include_dir_merge_list alerts
 automation: !include_dir_list automations
 binary_sensor: !include_dir_merge_list binary_sensors
@@ -146,7 +181,7 @@ input_number: !include input_number.yaml
 #light: !includ_dir_merge_list lights/
 mqtt: !include servers/mqtt.yaml
 notify: !include_dir_merge_list notifiers
-#panel_iframe: !include_dir_named iframes
+panel_iframe: !include_dir_named iframes
 scene: !include scenes.yaml
 script: !include_dir_merge_named scripts
 sensor: !include_dir_merge_list sensor

@@ -6,9 +6,9 @@ System:
     - group.servers
     - group.processes
     - group.storage
-    - group.speedtest
+   #- group.speedtest
     - group.transmission
     - group.certificates
     - group.automations
     - group.motion_switches
-    - group.temperatures
+    - group.fire_alarms

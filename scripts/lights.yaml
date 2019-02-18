@@ -1,27 +1,31 @@
 living_room_lights_on:
   sequence:
     - service: switch.turn_on
-      entity_id: switch.livingroom_1_light
+      #entity_id: switch.livingroom_1_light
+      entity_id: switch.espurna_living_room_1
     - service: switch.turn_on
-      entity_id: switch.livingroom_2_light
+      #entity_id: switch.livingroom_2_light
+      entity_id: switch.espurna_living_room_2
 
 living_room_lights_off:
   sequence:
     - service: switch.turn_off
-      entity_id: switch.livingroom_1_light
+      #entity_id: switch.livingroom_1_light
+      entity_id: switch.espurna_living_room_1
     - service: switch.turn_off
-      entity_id: switch.livingroom_2_light
+      #entity_id: switch.livingroom_2_light
+      entity_id: switch.espurna_living_room_2
 
 turn_off_all_lights:
   sequence:
     - service: switch.turn_off
-      entity_id: switch.livingroom_1_light
+      entity_id: switch.espurna_living_room_1
     - service: switch.turn_off
-      entity_id: switch.livingroom_2_light
+      entity_id: switch.espurna_living_room_2
     - service: switch.turn_off
       entity_id: switch.entrance_light
     - service: switch.turn_off
-      entity_id: switch.kitchen_light
+      entity_id: switch.espurna_kitchen
     - service: switch.turn_off
       entity_id: switch.porch_light
     - service: switch.turn_off
@@ -31,11 +35,11 @@ turn_off_all_lights:
     - service: switch.turn_off
       entity_id: switch.master_bedroom_light
     - service: switch.turn_off
-      entity_id: switch.kids_room_light
+      entity_id: switch.espurna_kids_room_1
     - service: switch.turn_off
-      entity_id: switch.safe_room_light
+      entity_id: switch.espurna_safe_room
     - service: switch.turn_off
-      entity_id: switch.kids_room_night_light
+      entity_id: switch.espurna_kids_room_2
     - service: switch.turn_off
       entity_id: switch.shower_room_light
     - service: switch.turn_off

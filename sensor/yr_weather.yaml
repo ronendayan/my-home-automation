@@ -1,6 +1,0 @@
-- platform: yr
-  monitored_conditions:
-    - temperature
-    - humidity
-    - cloudiness
-    - fog

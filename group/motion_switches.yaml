@@ -1,7 +1,7 @@
 motion_switches:
   name: "Motion Switches"
   entities:
-    - automation.front_door_status
-    - automation.porch_door_status
-    - automation.kids_room_window_status
-    - automation.living_room_motion_status
+    - automation.front_door_sensor
+    - automation.porch_door_sensor
+    - automation.kids_room_window_sensor
+    - automation.living_room_motion_sensor

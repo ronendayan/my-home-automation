@@ -4,5 +4,4 @@ HDMI_Switch:
   entities:
     - scene.kodi
     - scene.amazon_fire_tv
-    - scene.live_tv
     - scene.chromecast_living_room
